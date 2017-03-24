@@ -47,4 +47,10 @@ body {
 .player-name::-webkit-input-placeholder {
   color: #FFFFFF; }
 
+#start-btn {
+  padding: .5rem 2rem;
+  background: #444942;
+  border-radius: 5px;
+  color: #FAFAFA; }
+
 /*# sourceMappingURL=main.css.map */

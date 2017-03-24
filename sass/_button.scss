@@ -39,3 +39,10 @@
 .player-name::-webkit-input-placeholder {
     color: #FFFFFF;
 }
+
+#start-btn {
+  padding: .5rem 2rem;
+  background: $dark-grey;
+  border-radius: 5px;
+  color: #FAFAFA;
+}
