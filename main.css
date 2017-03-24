@@ -4,7 +4,7 @@ body {
   color: #E47824;
   text-align: center; }
 
-.div-hide {
+.hidden {
   display: none; }
 
 .styling {
@@ -15,11 +15,22 @@ body {
   margin: 3rem auto 0 auto;
   border-radius: 10px; }
 
+.header-card {
+  margin: 2rem auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 90%;
+  background: #444942;
+  border: 1px solid black;
+  border-radius: 10px; }
+
 .weapon-btn {
   padding: 1rem 2rem;
   border-radius: 10px;
   background: #109170;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 0 2rem; }
 
 .atk-btn {
   padding: 1rem 2rem;
@@ -53,5 +64,12 @@ body {
   border-radius: 5px;
   color: #FAFAFA;
   margin-top: 2rem; }
+
+#play-again {
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  background: #DE1916;
+  color: #FAFAFA; }
 
 /*# sourceMappingURL=main.css.map */
