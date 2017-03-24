@@ -37,27 +37,20 @@ $playAgain.on('click', function(e){
 
 // function for journey page to move to the next page
 
-  // location option appears
-  // click location button
-    // weapon option appears
-  // click weapon button
-    // move on to battle page
-    //
+    var $location = $('.location');
+    var $weaponBtn = $('.weapon-btn');
+    var $journeyArea = $('.journey-narrative');
+    var $pageTwo = $('#pg2Narr');
+    var $pageThree = $('#pg3Nar');
 
-    // var $location = $('.location');
-    // var $weaponBtn = $('.weapon-btn');
-    // var $journeyArea = $('.journey-narrative');
-    // var $pageTwo = $('#pg2Narr');
-    // var $pageThree = $('#pg3Nar');
-    //
-    // $location.on('click', function(e){
-    //   e.preventDefault();
-    //   $journeyArea.removeClass('hidden');
-    //   $weaponBtn.removeClass('hidden');
-    // });
-    //
-    // $weaponBtn.on('click', function(e){
-    //   e.preventDefault();
-    //   $pageTwo.addClass('hidden');
-    //   $pageThree.removeClass('hidden');
-    // });
+    $location.on('click', function(e){
+      e.preventDefault();
+      $journeyArea.removeClass('hidden');
+      $weaponBtn.removeClass('hidden');
+    });
+
+    $weaponBtn.on('click', function(e){
+      e.preventDefault();
+      $pageTwo.addClass('hidden');
+      $pageThree.removeClass('hidden');
+    });
