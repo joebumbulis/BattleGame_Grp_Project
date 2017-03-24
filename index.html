@@ -13,7 +13,7 @@
 
 <body>
 
-  <div class="div-hide">
+  <div class="hidden">
     <div class="styling">
       <div class="buttons">
         <button class="atk-btn" type="button" name="button">Attack!</button>
@@ -29,17 +29,20 @@
     </div>
   </div>
 
-  <div class="styling page-one-start-game">
-    <h1>StartGame</h1>
+  <div class="base hidden styling page-one">
+    <div class="header-card">
+      <h1>StartGame</h1>
+    </div>
       <input placeholder="placeholder" class="player-name" type="text" name="player-name"><br>
       <button id="start-btn" type="button" name="start-game-button">Begin Journey</button>
   </div>
 
 
-  <div class="div-hide styling page-two">
+  <div class="base hidden styling page-two">
 
-
+    <div class="header-card">
       <h1 class="journey-title"></h1>
+    </div>
       <img src="" alt="">
       <p class="journey-narrative">Welcome<span class="username"></span>! Would you like to go into the forest or the cave? </p>
 
@@ -53,27 +56,34 @@
 
   </div>
 
-    <div class="div-hide styling page-three">
+  <div class="base hidden styling page-three">
+    <div class="header-card">
+
       <h1 class="battle-title"></h1>
-      <img src="" alt="">
-      <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
-
-      <button class="atk-btn" id="attack-btn">ATTACK!</button>
-      <button class="atk-btn" id="defend-btn">DEFEND!</button>
-
-      <h6 class="user-health"></h6>
-      <h6 class="enemy-health"></h6>
     </div>
+    <img src="" alt="">
+    <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
 
-    <div class="div-hide styling page-four-game-over">
+    <button class="atk-btn" id="attack-btn">ATTACK!</button>
+    <button class="atk-btn" id="defend-btn">DEFEND!</button>
+
+    <h6 class="user-health"></h6>
+    <h6 class="enemy-health"></h6>
+  </div>
+
+  <div class="base styling page-four">
+    <div class="header-card">
       <h1>Game Over</h1>
       <h3>Game Over!! Play Again?</h3>
-
-      <button id="play-again" type="button" name="play-again-button">Let's Do this!</button>
-      <div class="background-img-pg-four">
-        <img src="">
-      </div>
     </div>
+    <!-- <h1>Game Over</h1>
+    <h3>Game Over!! Play Again?</h3> -->
+
+    <button id="play-again" type="button" name="play-again-button">Let's Do This!</button>
+    <div class="background-img-pg-four">
+      <img src="">
+    </div>
+  </div>
 
 
     <script
