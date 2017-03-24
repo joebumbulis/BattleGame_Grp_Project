@@ -12,7 +12,7 @@ body {
   height: 33rem;
   width: 80%;
   border: 1px solid black;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
   border-radius: 10px; }
 
 .weapon-btn {
@@ -46,5 +46,12 @@ body {
 
 .player-name::-webkit-input-placeholder {
   color: #FFFFFF; }
+
+#start-btn {
+  padding: .5rem 2rem;
+  background: #444942;
+  border-radius: 5px;
+  color: #FAFAFA;
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
