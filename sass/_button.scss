@@ -1,0 +1,41 @@
+.weapon-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: $green-ish;
+  color: #FFFFFF;
+}
+
+
+.atk-btn {
+  padding: 1rem 2rem;
+
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: $red;
+  color: #FFFFFF;
+
+}
+.location {
+  // width: 10rem;
+  padding: 1rem 2rem;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: #D86338;
+  color: $dark-grey;
+  color: #FFFFFF;
+}
+
+.player-name {
+  margin-top: 5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: $brownish;
+  color: white;
+
+
+}
+
+.player-name::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
