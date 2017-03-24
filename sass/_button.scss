@@ -3,6 +3,7 @@
   border-radius: 10px;
   background: $green-ish;
   color: #FFFFFF;
+  margin: 0 2rem;
 }
 
 
@@ -40,10 +41,18 @@
     color: #FFFFFF;
 }
 
+
 #start-btn {
   padding: .5rem 2rem;
   background: $dark-grey;
   border-radius: 5px;
   color: #FAFAFA;
   margin-top: 2rem;
+}
+#play-again {
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  background: $red;
+  color: #FAFAFA;
 }
