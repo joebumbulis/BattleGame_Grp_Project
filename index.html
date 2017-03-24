@@ -14,63 +14,63 @@
 <body>
 
   <div class="div-hide">
-        <div class="styling">
-          <div class="buttons">
-            <button class="atk-btn" type="button" name="button">Attack!</button>
-            <button class="atk-btn" type="button" name="button">Defend!</button>
-          </div>
-          <div class="buttons">
-            <button class="location" type="button" name="button">Location 1</button>
-            <button class="location" type="button" name="button">Location 2</button>
-          </div>
-          <div class="input-div">
-            <input placeholder="What is your name? "class="player-name" type="text" name="" value="">
-          </div>
-        </div>
+    <div class="styling">
+      <div class="buttons">
+        <button class="atk-btn" type="button" name="button">Attack!</button>
+        <button class="atk-btn" type="button" name="button">Defend!</button>
       </div>
+      <div class="buttons">
+        <button class="location" type="button" name="button">Location 1</button>
+        <button class="location" type="button" name="button">Location 2</button>
+      </div>
+      <div class="input-div">
+        <input placeholder="What is your name? "class="player-name" type="text" name="" value="">
+      </div>
+    </div>
+  </div>
 
   <div class="styling page-one-start-game">
     <h1>StartGame</h1>
-      <input class="player-name-input" type="text" name="player-name">
-      <button class="begin-journey-button"type="button" name="start-game-button">Begin Journey</button>
+      <input placeholder="placeholder" class="player-name" type="text" name="player-name"><br>
+      <button id="start-btn" type="button" name="start-game-button">Begin Journey</button>
   </div>
 
 
-  <div class="styling page-two">
+  <div class="div-hide styling page-two">
 
 
       <h1 class="journey-title"></h1>
       <img src="" alt="">
       <p class="journey-narrative">Welcome<span class="username"></span>! Would you like to go into the forest or the cave? </p>
 
-      <button class="location forest-btn">Forest</button>
-      <button class="location cave-btn">Cave</button>
+      <button id="forest-btn" class="location">Forest</button>
+      <button id="cave-btn" class="location">Cave</button>
 
       <p class="journey-narrative">Nice choice<span class="username"></span>! Would you like a sword or spear?</p>
 
-      <button class="weapon-btn forest-btn">Sword</button>
-      <button class="weapon-btn cave-btn">Spear</button>
+      <button id="sword-btn" class="weapon-btn">Sword</button>
+      <button id="spear-btn" class="weapon-btn">Spear</button>
 
   </div>
 
 
-    <div class="styling page-three">
+    <div class="div-hide styling page-three">
       <h1 class="battle-title"></h1>
       <img src="" alt="">
       <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
 
-      <button class="atk-btn attack-btn">ATTACK!</button>
-      <button class="atk-btn defend-btn">DEFEND!</button>
+      <button class="atk-btn" id="attack-btn">ATTACK!</button>
+      <button class="atk-btn" id="defend-btn">DEFEND!</button>
 
       <h6 class="user-health"></h6>
       <h6 class="enemy-health"></h6>
     </div>
 
-    <div class="styling page-four-game-over">
+    <div class="div-hide styling page-four-game-over">
       <h1>Game Over</h1>
       <h3>Game Over!! Play Again?</h3>
 
-      <button type="button" name="play-again-button">Let's Do this!</button>
+      <button id="play-again" type="button" name="play-again-button">Let's Do this!</button>
       <div class="background-img-pg-four">
         <img src="">
       </div>
