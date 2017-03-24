@@ -31,10 +31,7 @@ $playAgain.on('click', function(e){
   console.log('yay');
   $('.base').addClass('hidden');
   $('.page-one').removeClass('hidden');
-
 })
-
-
 
 
 
@@ -47,18 +44,22 @@ $playAgain.on('click', function(e){
     // move on to battle page
     //
 
-    var $location = $('.location');
-    var $weaponBtn = $('.weapon-btn');
-    var $journeyArea = $('.journey-narrative');
-    var $pageTwo = $('.page-two');
-
-    $location.on('click', function(e){
-      e.preventDefault();
-      $weaponBtn.show();
-      $journeyArea.show();
-    });
-
-    $weaponBtn.on('click', function(e){
-      e.preventDefault();
-      $pageTwo.hide();
-    });
+    // var $location = $('.location');
+    // var $weaponBtn = $('.weapon-btn');
+    // var $journeyArea = $('.journey-narrative');
+    // var $pageTwo = $('.page-two');
+    // var $pageThree = $('.page-three');
+    //
+    // console.log($pageTwo);
+    //
+    // $location.on('click', function(e){
+    //   e.preventDefault();
+    //   $journeyArea.removeClass('hidden');
+    //   $weaponBtn.removeClass('hidden');
+    // });
+    //
+    // $weaponBtn.on('click', function(e){
+    //   e.preventDefault();
+    //   $pageTwo.addClass('hidden');
+    //   $pageThree.removeClass('hidden');
+    // });
