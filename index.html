@@ -29,11 +29,15 @@
     </div>
   </div>
 
-  <div class="base hidden styling page-one">
+  <div class="base styling page-one">
     <div class="header-card">
-      <h1>StartGame</h1>
+      <h1>Motherflippin' Rap Battle</h1>
     </div>
-      <input placeholder="placeholder" class="player-name" type="text" name="player-name"><br>
+    <div class="story-card">
+      <p>Welcome to your one shot, this opportunity comes once in a lifetime. Your entire life, you've dreamed of entering into a rap battle.</p>
+      <!-- maybe include  -->
+    </div>
+      <input placeholder="What's your rapper name?" class="player-name" type="text" name="player-name"><br>
       <button id="start-btn" type="button" name="start-game-button">Begin Journey</button>
   </div>
 
@@ -44,32 +48,41 @@
       <h1 class="journey-title"></h1>
     </div>
       <img src="" alt="">
-      <p class="journey-narrative">Welcome<span class="username"></span>! Would you like to go into the forest or the cave? </p>
-
-      <button id="forest-btn" class="location">Forest</button>
-      <button id="cave-btn" class="location">Cave</button>
+      <div class="story-card">
+        <p id="pg2Welcome" class="journey-narrative">Yo<span class="username">username</span>! It's the weekend. You ain't gone nothin' to do, so you go out with your friends. This is a rare moment, as you spend almost all of your time either working your day job or spittin' mad flows into the mirror as you dream about one day entering into a rap battle. </p>
+      </div>
+      <div class="story-card">
+        <p id="pg2Narr">You and your gaggle of buds drive up to Emos in your 2008 Corolla. As you are walking up to the club, your like, What up? I'm so pumped about my stuff from the thrift shop. Ice on the fridge, it's so frosty that people by like, "Yams, that a cold mass donkey."</p>
+      </div>
+      <div class="story-card">
+        <p id="pg3Narr">You notice some strange activity in the alley way behind Emos, do you enter the club or go into the alley.</p>
+      </div>
+      <button id="forest-btn" class="location">Alley</button>
+      <button id="cave-btn" class="location">Club</button>
 
       <p class="journey-narrative">Nice choice<span class="username"></span>! Would you like a sword or spear?</p>
 
       <button id="sword-btn" class="weapon-btn">Sword</button>
       <button id="spear-btn" class="weapon-btn">Spear</button>
 
-<<<<<<< HEAD
+
         <button class="atk-btn attack-btn">ATTACK!</button>
         <button class="atk-btn defend-btn">DEFEND!</button>
         <h6 class="user-health"></h6>
         <h6 class="enemy-health"></h6>
-=======
+
   </div>
 
->>>>>>> 34b6f406ded1068542010a72a1129d4027d1dd52
+
 
   <div class="base hidden styling page-three">
     <div class="header-card">
       <h1 class="battle-title"></h1>
     </div>
+    <div class="story-card">
+      <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
+    </div>
     <img src="" alt="">
-    <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
 
     <button class="atk-btn" id="attack-btn">ATTACK!</button>
     <button class="atk-btn" id="defend-btn">DEFEND!</button>
@@ -78,7 +91,7 @@
     <h6 class="enemy-health"></h6>
   </div>
 
-  <div class="base styling page-four">
+  <div class="base hidden styling page-four">
     <div class="header-card">
       <h1>Game Over</h1>
       <h3>Game Over!! Play Again?</h3>
