@@ -4,6 +4,9 @@ body {
   color: #E47824;
   text-align: center; }
 
+.div-hide {
+  display: none; }
+
 .styling {
   background: #109170;
   height: 33rem;
@@ -11,6 +14,12 @@ body {
   border: 1px solid black;
   margin: 0 auto;
   border-radius: 10px; }
+
+.weapon-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: #109170;
+  color: #FFFFFF; }
 
 .atk-btn {
   padding: 1rem 2rem;
