@@ -47,10 +47,8 @@ $playAgain.on('click', function(e){
     // var $location = $('.location');
     // var $weaponBtn = $('.weapon-btn');
     // var $journeyArea = $('.journey-narrative');
-    // var $pageTwo = $('.page-two');
-    // var $pageThree = $('.page-three');
-    //
-    // console.log($pageTwo);
+    // var $pageTwo = $('#pg2Narr');
+    // var $pageThree = $('#pg3Nar');
     //
     // $location.on('click', function(e){
     //   e.preventDefault();
