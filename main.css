@@ -19,7 +19,8 @@ body {
   padding: 1rem 2rem;
   border-radius: 10px;
   background: #109170;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 0 2rem; }
 
 .atk-btn {
   padding: 1rem 2rem;
@@ -53,5 +54,12 @@ body {
   border-radius: 5px;
   color: #FAFAFA;
   margin-top: 2rem; }
+
+#play-again {
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  background: #DE1916;
+  color: #FAFAFA; }
 
 /*# sourceMappingURL=main.css.map */
