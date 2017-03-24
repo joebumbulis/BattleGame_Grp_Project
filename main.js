@@ -9,19 +9,18 @@
     // move on to battle page
     //
 
-    // var $location = $('.location');
-    // var $weaponBtn = $('.weapon-btn');
-    // var $journeyArea = $('.journey-narrative');
-    //
-    //
-    // $location.on('click', function(e){
-    //   e.preventDefault();
-    //   $weaponBtn.removeClass('div-hide');
-    //   $journeyArea.removeClass('div-hide');
-    // })
-    //
-    // $weaponBtn.on('click', function(e){
-    //   e.preventDefault();
-    //   var $pageTwo = $('.page-two');
-    //   $pageTwo.addClass('div-hide');
-    // });
+    var $location = $('.location');
+    var $weaponBtn = $('.weapon-btn');
+    var $journeyArea = $('.journey-narrative');
+    var $pageTwo = $('.page-two');
+
+    $location.on('click', function(e){
+      e.preventDefault();
+      $weaponBtn.show();
+      $journeyArea.show();
+    });
+
+    $weaponBtn.on('click', function(e){
+      e.preventDefault();
+      $pageTwo.hide();
+    });
