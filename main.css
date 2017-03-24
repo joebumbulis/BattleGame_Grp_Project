@@ -1,0 +1,50 @@
+body {
+  font-family: Helvetica Neue, sans-serif;
+  background: #97B6B6;
+  color: #E47824;
+  text-align: center; }
+
+.div-hide {
+  display: none; }
+
+.styling {
+  background: #109170;
+  height: 33rem;
+  width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 10px; }
+
+.weapon-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: #109170;
+  color: #FFFFFF; }
+
+.atk-btn {
+  padding: 1rem 2rem;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: #DE1916;
+  color: #FFFFFF; }
+
+.location {
+  padding: 1rem 2rem;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: #D86338;
+  color: #444942;
+  color: #FFFFFF; }
+
+.player-name {
+  margin-top: 5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #A46A22;
+  color: white; }
+
+.player-name::-webkit-input-placeholder {
+  color: #FFFFFF; }
+
+/*# sourceMappingURL=main.css.map */
