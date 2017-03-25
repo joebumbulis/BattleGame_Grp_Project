@@ -76,29 +76,41 @@ WHAT: go to end page
 
 ### Narrative Arch with Copy Content
 #### Overarching Story
-* Opening Screen:
+
+##### WHAT: When page loads this appears:
+
+## Opening Screen:
 Game Name: "Motherflippin' Rap Battle"
 
 Welcome to your one shot, this opportunity comes once in a lifetime. Your entire life, you've dreamed of entering into a rap battle.
 
 What's your rapper name? [enter name into input]
+BUTTON- SUBMIT
+
+##### When you input name and clicked "submit" the above content display none/ and the below content and button appear.
 
 It's the weekend. You ain't gone nothin' to do, so you go out with your friends. This is a rare moment, as you spend almost all of your time either working your day job or spittin' mad flows into the mirror as you dream about one day entering into a rap battle.
 
 Button "Go out with friends"
 
+##### When you click on "go out with friends" button / PAGE 1 display hidden and page 2 displays with the below information:
+
 * Location page:
-You and your gaggle of buds drive up to Emos in your 2008 Corolla. As you are walking up to the club, your like, What up? I'm so pumped about my stuff from the thrift shop. Ice on the fridge, it's so frosty that people by like, "Yams, that a cold mass donkey."
+You and your gaggle of buds drive up to Emos in your 2008 Corolla. As you are walking up to the club, your like, What up? I'm so pumped about my stuff from the thrift shop. Ice on the fridge, it's so frosty that people by like, "Yams, that a cold sass donkey."
 
 You notice some strange activity in the alley way behind Emos, do you enter the club or go into the alley.
 
 Two buttons: "Alley" & "Club"
 
+##### When you click on either Alley or Club button, the above information and buttons disapear (while storing the location for later use); and the content below with two buttons display:
+
 Wow, you realize you've happened upon a rap battle! It's your moment. Do you choose to bust out your mad flows or your dope beatboxing?
 
 Two buttons: "Mad Flows" & "beatboxing"
 
-* Rap Battle:
+##### When you press either "mad flows" or "beatboxing" PAGE 2 above displays none and page 3 (which is below) displays. Stores the buttons weapons for later use.
+
+* Rap Battle, PAGE 3:
 
 'user name' is up against 'enemy name [name is determined by location]'.
 
@@ -106,6 +118,7 @@ Do you decide to rap battle to attack your opponent 'ad hominem' style or using 
 
 Two buttons:
 "Ad Hominem" & "Observational"
+
 
 
 Rap Battle - User enters into a rap battle with either the Hiphopopotamus (located in the back alley behind Emos) or the Rhymenocerous (located inside Emos).
