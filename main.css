@@ -34,6 +34,11 @@ body {
   color: #000000;
   border-radius: 1rem; }
 
+.opponents {
+  content: "";
+  display: block;
+  clear: both; }
+
 .weapon-btn {
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -43,7 +48,7 @@ body {
 
 .atk-btn {
   padding: 1rem 2rem;
-  margin: 5rem 2rem 0 2rem;
+  margin: 0rem 2rem 0 2rem;
   border-radius: 10px;
   background: #DE1916;
   color: #FFFFFF; }
@@ -86,5 +91,10 @@ body {
   border-radius: 5px;
   background: #DE1916;
   color: #FAFAFA; }
+
+.opponents img {
+  width: 5rem;
+  float: right;
+  padding-right: 6rem; }
 
 /*# sourceMappingURL=main.css.map */
