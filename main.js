@@ -54,3 +54,10 @@ $playAgain.on('click', function(e){
       $pageTwo.addClass('hidden');
       $pageThree.removeClass('hidden');
     });
+
+
+
+
+// constructor
+// method is called on an object
+// if this else this
