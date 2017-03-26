@@ -65,7 +65,7 @@ body {
   background: #FAFAFA;
   color: #E47824; }
 
-#start-btn {
+#start-btn, #submit-btn {
   padding: .5rem 2rem;
   background: #444942;
   border-radius: 5px;
