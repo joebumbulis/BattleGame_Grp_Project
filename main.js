@@ -4,6 +4,8 @@ var $weaponBtn = $('.weapon-btn');
 var $journeyArea = $('.journey-narrative');
 var $nameInput = $('#name-input');
 var $startBtn = $('#start-btn');
+var $alleyBtn = $('#alley-btn');
+var $clubBtn = $('#club-btn');
 var $submitBtn = $('#submit-btn');
 var $atkBtn = $('.atk-btn');
 var $storyCard1 = $('#story-card-1');
@@ -17,13 +19,13 @@ var $pageTwo = $('.page-two');
 var $pageThree = $('.page-three');
 var $playAgain = $('#play-again');
 var $next3to4 = $('#next-3-4');
-
+var $battleOver = $('.end')
 
 
 //**********************************************
 //Battle Page
 //when attack or defend button is pressed, page 3 display is none and page four appears.
-var $battleOver = $('.end')
+
 
 $battleOver.on('click', function(){
   console.log('hi');
@@ -31,7 +33,12 @@ $battleOver.on('click', function(){
   $('.page-four').removeClass('hidden');
 })
 
+//store name in constructor
+//store location in constructor
+//
 
+//based upon location click
+//if alley
 
 //************************************************
 //End Page
@@ -52,7 +59,15 @@ $startBtn.on('click', function() {
   $pageTwo.removeClass('hidden');
   $storyCard3.removeClass('hidden');
   $storyCard4.addClass('hidden');
-  $location.addClass('hidden'); 
+  $storyCard5.addClass('hidden');
+  $location.addClass('hidden');
+  //after clicking this button
+  //taken to pg2
+  //story card 4 needs to be hidden
+  $weaponBtn.addClass('hidden');
+  //next button needs to appear
+  $next3to4.removeClass('hidden');
+  //weapon buttons need to be hidden
 })
 
 
@@ -60,6 +75,11 @@ $playAgain.on('click', function(e){
   console.log('yay');
   $('.base').addClass('hidden');
   $('.page-one').removeClass('hidden');
+  $storyCard1.removeClass('hidden');
+  $nameInput.removeClass('hidden');
+  $submitBtn.removeClass('hidden');
+  $storyCard2.addClass('hidden');
+  $startBtn.addClass('hidden');
 })
 
 
@@ -76,6 +96,21 @@ $location.on('click', function(e){
   $storyCard4.addClass('hidden');
   $storyCard5.removeClass('hidden');
   $location.addClass('hidden');
+});
+
+//id alley or club btn
+//when club btn if clicked, insert Rhymenocerous into enemy name in span on battle
+//when alley btn if clicked, insert Hiphopopotamus into enemy name in span on battle
+
+//LOCATION BTNS: Alley or Club
+$alleyBtn.on('click', function(){
+  var $enemyName = $('.enemy-name');
+  $enemyName.text('Hiphopopotamus');
+})
+
+$clubBtn.on('click', function(){
+  var $enemyName = $('.enemy-name');
+  $enemyName.text('Rhymenocerous');
 });
 
 $weaponBtn.on('click', function(e){
