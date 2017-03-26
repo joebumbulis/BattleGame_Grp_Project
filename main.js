@@ -22,17 +22,6 @@ var $playAgain = $('#play-again');
 var $next3to4 = $('#next-3-4');
 var $battleOver = $('.end');
 
-//************************************************
-//Start Page
-$submitBtn.on('click', function(e){
-  e.preventDefault();
-  $nameInput.addClass('hidden');
-  $submitBtn.addClass('hidden');
-  $storyCard1.addClass('hidden');
-  $startBtn.removeClass('hidden');
-  $storyCard2.removeClass('hidden');
-});
-
 //Constructor
 function User (name, place, weapon, win) {
     'use strict';
@@ -45,29 +34,44 @@ function User (name, place, weapon, win) {
       return this.win;
     }
 }
-var userOne = new User("James");
+var userOne = new User("Joe");
 console.log(userOne);
 
-//game.rapBattle() => returns random number minus random number
+//************************************************
+//Start Page
+$submitBtn.on('click', function(e){
+  e.preventDefault();
+  $nameInput.addClass('hidden');
+  $submitBtn.addClass('hidden');
+  $storyCard1.addClass('hidden');
+  $startBtn.removeClass('hidden');
+  $storyCard2.removeClass('hidden');
+});
 
-// $location.on('click', function () {
-//   num1_5 = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
-//   console.log(num1_5);
-// })
-// $weaponBtn.on('click', function () {
-//   num6_10 = Math.floor(Math.random() * (10 - 6 + 1)) + 6;
-//   console.log(num6_10);
-// })
-// $atkBtn.on('click', function () {
-//   num = num6_10 - num1_5;
-//   console.log(num);
-//   if (num == 3 || num == 6) {
-//     console.log("Congrats you won!");
-//   }
-//   else {
-//     console.log("Oh sorry, you lost!");
-//   }
-// })
+$startBtn.on('click', function() {
+  $pageOne.addClass('hidden');
+  $pageTwo.removeClass('hidden');
+  $storyCard3.removeClass('hidden');
+  $storyCard4.addClass('hidden');
+  $storyCard5.addClass('hidden');
+  $location.addClass('hidden');
+  $weaponBtn.addClass('hidden');
+  $next3to4.removeClass('hidden');
+})
+
+$playAgain.on('click', function(e){
+  console.log('yay');
+  $('.base').addClass('hidden');
+  $('.page-one').removeClass('hidden');
+  $storyCard1.removeClass('hidden');
+  $nameInput.removeClass('hidden');
+  $submitBtn.removeClass('hidden');
+  $storyCard2.addClass('hidden');
+  $startBtn.addClass('hidden');
+  $('.styling').removeClass('alley-bg');
+  $('.styling').removeClass('club-bg');
+  $pageTwo.addClass('emo-bg');
+})
 
 //************************************************
 //Jouney Pages
@@ -82,6 +86,7 @@ $location.on('click', function(e){
   $storyCard4.addClass('hidden');
   $storyCard5.removeClass('hidden');
   $location.addClass('hidden');
+  $pageTwo.removeClass('emo-bg')
 });
 
 $alleyBtn.on('click', function(){
@@ -124,14 +129,14 @@ $next3to4.on('click', function(e){
   console.log('yay');
 });
 
+//**********************************************
+//Battle Page
 $atkBtn.on('click', function(e){
   var winNum = userOne.rapBattle;
   console.log(winNum);
   console.log(userOne.win);
 });
 
-//**********************************************
-//Battle Pages
 $battleOver.on('click', function(){
   console.log('hi');
   $('.base').addClass('hidden');
