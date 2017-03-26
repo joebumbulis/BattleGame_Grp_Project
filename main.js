@@ -105,6 +105,7 @@ $playAgain.on('click', function(e){
   $startBtn.addClass('hidden');
   $('.styling').removeClass('alley-bg');
   $('.styling').removeClass('club-bg');
+  $pageTwo.addClass('emo-bg');
 })
 
 
@@ -121,6 +122,7 @@ $location.on('click', function(e){
   $storyCard4.addClass('hidden');
   $storyCard5.removeClass('hidden');
   $location.addClass('hidden');
+  $pageTwo.removeClass('emo-bg')
 });
 
 //id alley or club btn
