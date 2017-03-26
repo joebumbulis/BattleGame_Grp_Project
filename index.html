@@ -58,31 +58,32 @@
   <div class="base hidden styling page-two">
 
     <div class="header-card">
-      <h1 class="journey-title"></h1>
+      <h1 class="journey-title">Onward!</h1>
     </div>
       <img src="" alt="">
-      <div class="story-card">
-        <p id="pg2Welcome" class="journey-narrative">Yo<span class="username">username</span>! It's the weekend. You ain't gone nothin' to do, so you go out with your friends. This is a rare moment, as you spend almost all of your time either working your day job or spittin' mad flows into the mirror as you dream about one day entering into a rap battle. </p>
+      <div id="story-card-3" class="story-card">
+        <p>You and your gaggle of buds drive up to Emos in your 2008 Corolla. As you are walking up to the club, your like, What up? I'm so pumped about my stuff from the thrift shop. Ice on the fridge, it's so frosty that people by like, "Yams, that a cold sass donkey."</p>
       </div>
-      <div class="story-card">
-        <p id="pg2Narr">You and your gaggle of buds drive up to Emos in your 2008 Corolla. As you are walking up to the club, your like, What up? I'm so pumped about my stuff from the thrift shop. Ice on the fridge, it's so frosty that people by like, "Yams, that a cold mass donkey."</p>
+
+      <div id="story-card-4" class="hidden story-card">
+        <p>You notice some strange activity in the alley way behind Emos, do you enter the club or go into the alley?</p>
       </div>
-      <div class="story-card">
-        <p id="pg3Narr">You notice some strange activity in the alley way behind Emos, do you enter the club or go into the alley.</p>
+      <button id="next-3-4" class="next-btn" type="button" name="button">Next</button>
+      <button id="alley-btn" class="hidden location">Alley</button>
+      <button id="club-btn" class="hidden location">Club</button>
+
+      <!-- <p class="hidden journey-narrative">Nice choice<span class="username"></span>! Would you like a sword or spear?</p> -->
+      <div id="story-card-5" class="hidden story-card">
+        <p>Wow, you realize you've happened upon a rap battle! It's your moment. Do you choose to bust out your mad flows or your dope beatboxing?</p>
       </div>
-      <button id="alley-btn" class="location">Alley</button>
-      <button id="club-btn" class="location">Club</button>
 
-      <p class="hidden journey-narrative">Nice choice<span class="username"></span>! Would you like a sword or spear?</p>
+      <button id="flows-btn" class="hidden weapon-btn">Mad Flows</button>
+      <button id="beatbox-btn" class="hidden weapon-btn">Dope Beatboxing</button>
 
-      <button id="sword-btn" class="hidden weapon-btn">Sword</button>
-      <button id="spear-btn" class="hidden weapon-btn">Spear</button>
 
-<<<<<<< HEAD
-      <button id="ad-btn" class="weapon-btn">Ad Hominem</button>
-      <button id="ob-btn" class="weapon-btn">Observational</button>
-=======
->>>>>>> 7ed0dca1b7edd772860eda1d24f502a7b0254937
+
+
+
   </div>
 
 
@@ -99,15 +100,25 @@
   <div class="base hidden styling page-three">
     <div class="header-card">
 
-      <h1 class="battle-title"></h1>
+      <h1 class="battle-title">RAP BATTLE!</h1>
     </div>
-    <div class="story-card">
-      <p class="battle-narrative">Whilst traveling into the <span class="location-name"></span>, you've happened upon a <span class="enemy-name"></span>. Act fast, would you rather attack or defend?</p>
+    <div id="story-card-6" class="story-card">
+      <p class="battle-narrative"><span class="user-name">[User Name]</span><span class="location-name"></span>, is up against <span class="enemy-name">[Enemy Name]!</span>.</p>
+    </div>
+    <div id="story-card-7" class="story-card">
+      <p>Do you decide to rap battle to attack your opponent 'ad hominem' style or using observational flows. Ad hominem will attack your opponents personally. Observational flows will just make fun of the situation at large.</p>
     </div>
     <img src="" alt="">
+    <div id="win" class="hidden story-card">
+      <p>Boom! You're the motherflippin' Winna!</p>
+    </div>
+    <div id="lose" class="hidden story-card">
+      <p>Wah-wah! Your palms were too sweaty, knees weak, arms too heavy, you threw up your mom's spaghetti. Go home and practice, so you'll be more ready.</p>
+    </div>
 
-    <button class="atk-btn end" id="attack-btn">ATTACK!</button>
-    <button class="atk-btn end" id="defend-btn">DEFEND!</button>
+
+    <button id="attack-btn-1" class="atk-btn end">Ad Hominem</button>
+    <button id="attack-btn-2" class="atk-btn end">Observational</button>
 
     <h6 class="user-health"></h6>
     <h6 class="enemy-health"></h6>
