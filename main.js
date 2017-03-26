@@ -1,4 +1,4 @@
-//Global Vars
+//vars need to be at the top of the js file
 var $location = $('.location');
 var $weaponBtn = $('.weapon-btn');
 var $journeyArea = $('.journey-narrative');
@@ -20,7 +20,6 @@ var $pageThree = $('.page-three');
 var $pageFour = $('.page-four');
 var $playAgain = $('#play-again');
 var $next3to4 = $('#next-3-4');
-<<<<<<< HEAD
 var $battleOver = $('.end')
 
 
@@ -41,24 +40,6 @@ var $battleOver = $('.end')
 	// 	return this;
 	// }
 //
-//
-var loc = Math.floor(Math.random() * (5-1+1)+1);
-var weapon = Math.floor(Math.random() * (10-6+1)+6);
-
-function User (name) {
-  'use strict';
-  this.name = name;
-  this.location = loc;
-  this.weapon = weapon;
-  this.win = 0;
-  this.rapBattle = function (){
-    this.win = this.weapon - this.location;
-    return this.win;
-  }
-}
-var game1 = new User();
-
-
 
 
 
@@ -79,46 +60,37 @@ $battleOver.on('click', function(){
 
 //based upon location click
 //if alley
-=======
-var $battleOver = $('.end');
-
-//Constructor
-function User (name, place, weapon, win) {
-    'use strict';
-    this.name = name;
-    this.place = 0;
-    this.weapon = 0;
-    this.win = 0
-    this.rapBattle = function () {
-      this.win = this.weapon - this.location;
-      return this.win;
-    }
-}
-var userOne = new User("Joe");
-console.log(userOne);
->>>>>>> 9fc77adbdd7a7e2bf90bebdc85eadc8880c26599
 
 //************************************************
-//Start Page
-$submitBtn.on('click', function(e){
-  e.preventDefault();
-  $nameInput.addClass('hidden');
-  $submitBtn.addClass('hidden');
-  $storyCard1.addClass('hidden');
-  $startBtn.removeClass('hidden');
-  $storyCard2.removeClass('hidden');
-});
+//End Page
+// #start-btn function to switch to journey page
+
+  // $('#start-btn').on('click', function() {
+  //   // $('.page-one-start-game').addClass('div-hide')
+  //   // $('.page-two').removeClass('div-hide')
+  //
+  //   $('.page-one-start-game').hide()
+  //   $('.page-two').show()
+  // })
 
 $startBtn.on('click', function() {
+  //adding variable and using add/remove class instead of
+  //.hide and .show method
   $pageOne.addClass('hidden');
   $pageTwo.removeClass('hidden');
   $storyCard3.removeClass('hidden');
   $storyCard4.addClass('hidden');
   $storyCard5.addClass('hidden');
   $location.addClass('hidden');
+  //after clicking this button
+  //taken to pg2
+  //story card 4 needs to be hidden
   $weaponBtn.addClass('hidden');
+  //next button needs to appear
   $next3to4.removeClass('hidden');
+  //weapon buttons need to be hidden
 })
+
 
 $playAgain.on('click', function(e){
   console.log('yay');
@@ -134,14 +106,15 @@ $playAgain.on('click', function(e){
   $pageTwo.addClass('emo-bg');
 })
 
-//************************************************
-//Jouney Pages
+
+
+// function for journey page to move to the next page
+
+
+
 $location.on('click', function(e){
   e.preventDefault();
-  var placeNum = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
-  userOne.place = placeNum;
-  console.log(userOne.place);
-  console.log(userOne);
+  //need to store location value
   $journeyArea.removeClass('hidden');
   $weaponBtn.removeClass('hidden');
   $storyCard4.addClass('hidden');
@@ -150,6 +123,11 @@ $location.on('click', function(e){
   $pageTwo.removeClass('emo-bg')
 });
 
+//id alley or club btn
+//when club btn if clicked, insert Rhymenocerous into enemy name in span on battle
+//when alley btn if clicked, insert Hiphopopotamus into enemy name in span on battle
+
+//LOCATION BTNS: Alley or Club
 $alleyBtn.on('click', function(){
   var $enemyName = $('.enemy-name');
   $enemyName.text('Hiphopopotamus');
@@ -174,12 +152,22 @@ $clubBtn.on('click', function(){
 
 $weaponBtn.on('click', function(e){
   e.preventDefault();
-  var weaponNum = Math.floor(Math.random() * (10 - 6 + 1)) + 6;
-  userOne.weapon = weaponNum;
-  console.log(userOne.weapon);
-  console.log(userOne);
   $pageTwo.addClass('hidden');
   $pageThree.removeClass('hidden');
+});
+
+$submitBtn.on('click', function(e){
+  e.preventDefault();
+  // take input name and store it in a var
+  // hide name input and submit button and first story card
+  $nameInput.addClass('hidden');
+  $submitBtn.addClass('hidden');
+  $storyCard1.addClass('hidden');
+
+  // display start journey button and second story card
+  $startBtn.removeClass('hidden');
+  $storyCard2.removeClass('hidden');
+
 });
 
 $next3to4.on('click', function(e){
@@ -190,42 +178,14 @@ $next3to4.on('click', function(e){
   console.log('yay');
 });
 
-//**********************************************
-//Battle Page
 $atkBtn.on('click', function(e){
-  var winNum = userOne.rapBattle;
-  console.log(winNum);
-  console.log(userOne.win);
+  //attack code
 });
 
-$battleOver.on('click', function(){
-  console.log('hi');
-  $('.base').addClass('hidden');
-  $('.page-four').removeClass('hidden');
-})
 
-//************************************************
-//End Page
-$startBtn.on('click', function() {
-  $pageOne.addClass('hidden');
-  $pageTwo.removeClass('hidden');
-  $storyCard3.removeClass('hidden');
-  $storyCard4.addClass('hidden');
-  $storyCard5.addClass('hidden');
-  $location.addClass('hidden');
-  $weaponBtn.addClass('hidden');
-  $next3to4.removeClass('hidden');
-})
-
-$playAgain.on('click', function(e){
-  console.log('yay');
-  $('.base').addClass('hidden');
-  $('.page-one').removeClass('hidden');
-  $storyCard1.removeClass('hidden');
-  $nameInput.removeClass('hidden');
-  $submitBtn.removeClass('hidden');
-  $storyCard2.addClass('hidden');
-  $startBtn.addClass('hidden');
-  $('.styling').removeClass('alley-bg');
-  $('.styling').removeClass('club-bg');
-})
+//just for future reference
+// if (win){
+//   $('#win').removeClass('hidden')
+// } else {
+//   $('#lose').removeClass('hidden')
+// }
