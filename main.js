@@ -20,6 +20,28 @@ var $next3to4 = $('#next-3-4');
 
 
 
+
+// battle & attack
+// method will be attackMethod and will be based off number 1 or 2
+// constructor name, location, attack
+
+// function User (name, location, attack) {
+//     'use strict';
+//     this.name = name;
+//     this.age = location;
+//     this.attack = attack;
+//     var battle = Math.ceil(Math.random() * 2);
+// }
+//this.battle = function() {
+	// 	this.age = this.age + agingSpeed;
+	// 	return this;
+	// }
+//
+//
+
+
+
+
 //**********************************************
 //Battle Page
 //when attack or defend button is pressed, page 3 display is none and page four appears.
