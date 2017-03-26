@@ -40,13 +40,14 @@ User.prototype.rapBattle = function () {
 
 // console.log(userOne);
 
-$('.user-name').text(userOne.name);
 //************************************************
 //Start Page
 $submitBtn.on('click', function(e){
   e.preventDefault();
   var inputName = $('#name-input').val();
   userOne.name = inputName;
+  var $userName = $('.user-name');
+  $userName.text(inputName)
   console.log(inputName);
   console.log(userOne);
   $nameInput.addClass('hidden');
