@@ -52,7 +52,15 @@ $startBtn.on('click', function() {
   $pageTwo.removeClass('hidden');
   $storyCard3.removeClass('hidden');
   $storyCard4.addClass('hidden');
-  $location.addClass('hidden'); 
+  $storyCard5.addClass('hidden');
+  $location.addClass('hidden');
+  //after clicking this button
+  //taken to pg2
+  //story card 4 needs to be hidden
+  $weaponBtn.addClass('hidden');
+  //next button needs to appear
+  $next3to4.removeClass('hidden');
+  //weapon buttons need to be hidden
 })
 
 
@@ -60,6 +68,11 @@ $playAgain.on('click', function(e){
   console.log('yay');
   $('.base').addClass('hidden');
   $('.page-one').removeClass('hidden');
+  $storyCard1.removeClass('hidden');
+  $nameInput.removeClass('hidden');
+  $submitBtn.removeClass('hidden');
+  $storyCard2.addClass('hidden');
+  $startBtn.addClass('hidden');
 })
 
 
