@@ -41,6 +41,22 @@ var $battleOver = $('.end')
 	// }
 //
 //
+var loc = Math.floor(Math.random() * (5-1+1)+1);
+var weapon = Math.floor(Math.random() * (10-6+1)+6);
+
+function User (name) {
+  'use strict';
+  this.name = name;
+  this.location = loc;
+  this.weapon = weapon;
+  this.win = 0;
+  this.rapBattle = function (){
+    this.win = this.weapon - this.location;
+    return this.win;
+  }
+}
+var game1 = new User();
+
 
 
 
