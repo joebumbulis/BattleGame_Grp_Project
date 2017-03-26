@@ -17,6 +17,7 @@ var $storyCard6 = $('#story-card-6');
 var $pageOne = $('.page-one')
 var $pageTwo = $('.page-two');
 var $pageThree = $('.page-three');
+var $pageFour = $('.page-four');
 var $playAgain = $('#play-again');
 var $next3to4 = $('#next-3-4');
 var $battleOver = $('.end')
@@ -80,6 +81,8 @@ $playAgain.on('click', function(e){
   $submitBtn.removeClass('hidden');
   $storyCard2.addClass('hidden');
   $startBtn.addClass('hidden');
+  $('.styling').removeClass('alley-bg');
+  $('.styling').removeClass('club-bg');
 })
 
 
@@ -109,6 +112,9 @@ $alleyBtn.on('click', function(){
   $('#hiphop').removeClass('hidden');
   $('#rhyme').addClass('hidden');
   $('.location-name').text('dark, dank alley way')
+  $pageTwo.addClass('alley-bg');
+  $pageThree.addClass('alley-bg');
+  $pageFour.addClass('alley-bg');
 })
 
 $clubBtn.on('click', function(){
@@ -117,6 +123,9 @@ $clubBtn.on('click', function(){
   $('#rhyme').removeClass('hidden');
   $('#hiphop').addClass('hidden');
   $('.location-name').text('bumpin\' club')
+  $pageTwo.addClass('club-bg');
+  $pageThree.addClass('club-bg');
+  $pageFour.addClass('club-bg');
 });
 
 $weaponBtn.on('click', function(e){
