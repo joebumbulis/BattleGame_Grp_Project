@@ -29,24 +29,26 @@ function User (name, place, weapon, win) {
     this.place = 0;
     this.weapon = 0;
     this.win = 0;
-    // this.rapBattle = function () {
-    //   this.win = this.weapon - this.place;
-    //   return this.win;
-    // }
+
 }
-var userOne = new User("Joe");
+var userOne = new User();
 
 User.prototype.rapBattle = function () {
   this.win = this.weapon - this.place;
   return this.win;
 }
 
-console.log(userOne);
+// console.log(userOne);
 
+$('.user-name').text(userOne.name);
 //************************************************
 //Start Page
 $submitBtn.on('click', function(e){
   e.preventDefault();
+  var inputName = $('#name-input').val();
+  userOne.name = inputName;
+  console.log(inputName);
+  console.log(userOne);
   $nameInput.addClass('hidden');
   $submitBtn.addClass('hidden');
   $storyCard1.addClass('hidden');
@@ -87,7 +89,6 @@ $location.on('click', function(e){
   var placeNum = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
   userOne.place = placeNum;
   console.log(userOne.place);
-  console.log(userOne);
   $journeyArea.removeClass('hidden');
   $weaponBtn.removeClass('hidden');
   $storyCard4.addClass('hidden');
@@ -128,33 +129,33 @@ $weaponBtn.on('click', function(e){
   $pageThree.removeClass('hidden');
 });
 
-function User(name, place){
-  this.name = name;
-  this.place = place;
-  console.log(this.name);
-}
+// function User(name, place){
+//   this.name = name;
+//   this.place = place;
+//   console.log(this.name);
+// }
 
 
 // var name = new User(namevar);
 // var namevar;
-$submitBtn.on('click', function(e){
-  e.preventDefault();
-  var inputName = $('#name-input').val();
-  var newUser = new User(inputName);
-  console.log(newUser);
-  console.log('hi');
-
-  // take input name and store it in a var
-  // hide name input and submit button and first story card
-  $nameInput.addClass('hidden');
-  $submitBtn.addClass('hidden');
-  $storyCard1.addClass('hidden');
-
-  // display start journey button and second story card
-  $startBtn.removeClass('hidden');
-  $storyCard2.removeClass('hidden');
-
-});
+// $submitBtn.on('click', function(e){
+//   e.preventDefault();
+//   var inputName = $('#name-input').val();
+//   var newUser = new User(inputName);
+//   console.log(newUser);
+//   console.log('hi');
+//
+//   // take input name and store it in a var
+//   // hide name input and submit button and first story card
+//   $nameInput.addClass('hidden');
+//   $submitBtn.addClass('hidden');
+//   $storyCard1.addClass('hidden');
+//
+//   // display start journey button and second story card
+//   $startBtn.removeClass('hidden');
+//   $storyCard2.removeClass('hidden');
+//
+// });
 
 
 $next3to4.on('click', function(e){
