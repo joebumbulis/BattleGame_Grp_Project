@@ -133,3 +133,16 @@ Win: "Boom! You're the motherflippin' Winna!"
 Lose: "Wah-wah! Your palms were too sweaty, knees weak, arms too heavy,
 you threw up your mom's spaghetti. Go home and practice, so you'll
 be more ready."
+
+
+
+Functions in the javascript:
+
+constructor function for Username:
+    name
+    location
+    weapon
+    attack or defend
+
+method for Battle
+    battle function - if statement ends with win or lose    
