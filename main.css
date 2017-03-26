@@ -39,6 +39,16 @@ body {
   display: block;
   clear: both; }
 
+.alley-bg {
+  background-image: url("images/alley4web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.club-bg {
+  background-image: url("images/club4web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .weapon-btn {
   padding: 1rem 2rem;
   border-radius: 10px;
