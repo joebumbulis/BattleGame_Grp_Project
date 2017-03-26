@@ -116,6 +116,7 @@ $playAgain.on('click', function(e){
 
 $location.on('click', function(e){
   e.preventDefault();
+
   //need to store location value
   $journeyArea.removeClass('hidden');
   $weaponBtn.removeClass('hidden');
@@ -158,8 +159,23 @@ $weaponBtn.on('click', function(e){
   $pageThree.removeClass('hidden');
 });
 
+function User(name, place){
+  this.name = name;
+  this.place = place;
+  console.log(this.name);
+}
+
+
+// var name = new User(namevar);
+// var namevar;
 $submitBtn.on('click', function(e){
   e.preventDefault();
+  // namevar = $('#name-input').val();
+  var inputName = $('#name-input').val();
+  var newUser = new User(inputName);
+  console.log(newUser);
+  console.log('hi');
+
   // take input name and store it in a var
   // hide name input and submit button and first story card
   $nameInput.addClass('hidden');
