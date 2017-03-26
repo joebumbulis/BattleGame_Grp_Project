@@ -28,13 +28,19 @@ function User (name, place, weapon, win) {
     this.name = name;
     this.place = 0;
     this.weapon = 0;
-    this.win = 0
-    this.rapBattle = function () {
-      this.win = this.weapon - this.location;
-      return this.win;
-    }
+    this.win = 0;
+    // this.rapBattle = function () {
+    //   this.win = this.weapon - this.place;
+    //   return this.win;
+    // }
 }
 var userOne = new User("Joe");
+
+User.prototype.rapBattle = function () {
+  this.win = this.weapon - this.place;
+  return this.win;
+}
+
 console.log(userOne);
 
 //************************************************
@@ -132,9 +138,9 @@ $next3to4.on('click', function(e){
 //**********************************************
 //Battle Page
 $atkBtn.on('click', function(e){
-  var winNum = userOne.rapBattle;
+  var winNum = userOne.rapBattle();
   console.log(winNum);
-  console.log(userOne.win);
+  console.log(userOne);
 });
 
 $battleOver.on('click', function(){
