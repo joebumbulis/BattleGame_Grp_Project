@@ -57,6 +57,9 @@ $startBtn.on('click', function() {
   //.hide and .show method
   $pageOne.addClass('hidden');
   $pageTwo.removeClass('hidden');
+  $storyCard3.removeClass('hidden');
+  $storyCard4.addClass('hidden');
+  $location.addClass('hidden'); 
 })
 
 
@@ -105,9 +108,7 @@ $weaponBtn.on('click', function(e){
 
 $submitBtn.on('click', function(e){
   e.preventDefault();
-
   // take input name and store it in a var
-
   // hide name input and submit button and first story card
   $nameInput.addClass('hidden');
   $submitBtn.addClass('hidden');
@@ -125,8 +126,8 @@ $next3to4.on('click', function(e){
   $next3to4.addClass('hidden');
   $location.removeClass('hidden');
   console.log('yay');
-})
+});
 
 $atkBtn.on('click', function(e){
   //attack code
-})
+});
