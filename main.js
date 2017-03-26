@@ -130,35 +130,6 @@ $weaponBtn.on('click', function(e){
   $pageThree.removeClass('hidden');
 });
 
-// function User(name, place){
-//   this.name = name;
-//   this.place = place;
-//   console.log(this.name);
-// }
-
-
-// var name = new User(namevar);
-// var namevar;
-// $submitBtn.on('click', function(e){
-//   e.preventDefault();
-//   var inputName = $('#name-input').val();
-//   var newUser = new User(inputName);
-//   console.log(newUser);
-//   console.log('hi');
-//
-//   // take input name and store it in a var
-//   // hide name input and submit button and first story card
-//   $nameInput.addClass('hidden');
-//   $submitBtn.addClass('hidden');
-//   $storyCard1.addClass('hidden');
-//
-//   // display start journey button and second story card
-//   $startBtn.removeClass('hidden');
-//   $storyCard2.removeClass('hidden');
-//
-// });
-
-
 $next3to4.on('click', function(e){
   $storyCard3.addClass('hidden');
   $storyCard4.removeClass('hidden');
@@ -171,8 +142,13 @@ $next3to4.on('click', function(e){
 //Battle Page
 $atkBtn.on('click', function(e){
   var winNum = userOne.rapBattle();
-  console.log(winNum);
-  console.log(userOne);
+  if (winNum <= 5) {
+    $('#win').removeClass('hidden');
+  }
+  else {
+    $('#win').addClass('hidden');
+    $('#lose').removeClass('hidden');
+  }
 });
 
 $battleOver.on('click', function(){
@@ -203,6 +179,8 @@ $playAgain.on('click', function(e){
   $submitBtn.removeClass('hidden');
   $storyCard2.addClass('hidden');
   $startBtn.addClass('hidden');
+  $('#lose').addClass('hidden');
+  $('#win').removeClass('hidden');
   $('.styling').removeClass('alley-bg');
   $('.styling').removeClass('club-bg');
 })
