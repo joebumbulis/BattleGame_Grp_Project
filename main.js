@@ -107,6 +107,7 @@ $alleyBtn.on('click', function(){
   var $enemyName = $('.enemy-name');
   $enemyName.text('Hiphopopotamus');
   $('#hiphop').removeClass('hidden');
+  $('#rhyme').addClass('hidden');
   $('.location-name').text('dark, dank alley way')
 })
 
@@ -114,6 +115,7 @@ $clubBtn.on('click', function(){
   var $enemyName = $('.enemy-name');
   $enemyName.text('Rhymenocerous');
   $('#rhyme').removeClass('hidden');
+  $('#hiphop').addClass('hidden');
   $('.location-name').text('bumpin\' club')
 });
 
