@@ -106,11 +106,15 @@ $location.on('click', function(e){
 $alleyBtn.on('click', function(){
   var $enemyName = $('.enemy-name');
   $enemyName.text('Hiphopopotamus');
+  $('#hiphop').removeClass('hidden');
+  $('.location-name').text('dark, dank alley way')
 })
 
 $clubBtn.on('click', function(){
   var $enemyName = $('.enemy-name');
   $enemyName.text('Rhymenocerous');
+  $('#rhyme').removeClass('hidden');
+  $('.location-name').text('bumpin\' club')
 });
 
 $weaponBtn.on('click', function(e){
