@@ -1,2 +1,91 @@
+body {
+  font-family: Helvetica Neue, sans-serif;
+  background: #97B6B6;
+  color: #E47824;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.styling {
+  background: #109170;
+  height: 33rem;
+  width: 80%;
+  border: 1px solid black;
+  margin: 3rem auto 0 auto;
+  border-radius: 10px; }
+
+.header-card {
+  margin: 2rem auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 90%;
+  background: #444942;
+  border: 1px solid black;
+  border-radius: 10px; }
+
+.story-card {
+  border: 4px solid #7b4d5a;
+  padding: .5rem;
+  margin: 1rem auto;
+  width: 60%;
+  background: #d1d1d1;
+  color: #000000;
+  border-radius: 1rem; }
+
+.weapon-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: #109170;
+  color: #FFFFFF;
+  margin: 0 2rem; }
+
+.atk-btn {
+  padding: 1rem 2rem;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: #DE1916;
+  color: #FFFFFF; }
+
+.location {
+  padding: 1rem 2rem;
+  margin: 5rem 2rem 0 2rem;
+  border-radius: 10px;
+  background: #D86338;
+  color: #444942;
+  color: #FFFFFF; }
+
+.player-name {
+  width: 30%;
+  margin-top: 5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #FAFAFA;
+  color: #E47824; }
+
+.next-btn {
+  padding: .5rem 2rem;
+  background: #444942;
+  border-radius: 5px;
+  color: #FAFAFA;
+  margin-top: 2rem; }
+
+#start-btn, #submit-btn {
+  padding: .5rem 2rem;
+  background: #444942;
+  border-radius: 5px;
+  color: #FAFAFA;
+  margin-top: 2rem; }
+
+#play-again {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  background: #DE1916;
+  color: #FAFAFA; }
+
 
 /*# sourceMappingURL=main.css.map */
